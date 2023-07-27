@@ -1,0 +1,47 @@
+.app__navbar {
+	@apply w-full flex justify-between items-center bg-colorBlack px-4 lg:px-8 py-4;
+
+	&-logo {
+		@apply flex justify-start items-center;
+
+		& img {
+			@apply w-[150px] object-contain;
+		}
+	}
+
+	&-links {
+		@apply flex-[1] hidden lg:flex items-center justify-center space-x-4;
+
+		& li {
+			@apply cursor-pointer hover:text-colorGrey;
+		}
+	}
+
+	&-login {
+		@apply hidden md:flex justify-end items-center;
+
+		& a {
+			@apply mx-4 transition-all duration-500 ease-linear hover:text-colorGolden;
+		}
+
+		& div {
+			@apply w-[1px] h-[30px] bg-colorGray;
+		}
+	}
+
+	&-smallscreen {
+		@apply flex lg:hidden;
+
+		&_links li {
+			@apply m-8 cursor-pointer text-colorGolden text-[2rem] text-center font-fontBase hover:text-white;
+		}
+
+		&_overlay {
+			@apply fixed top-0 left-0 w-full h-screen bg-colorBlack transition-all duration-500 ease-linear flex-col z-10;
+
+			& .overlay__close {
+				@apply text-3xl text-colorGolden cursor-pointer absolute top-5 right-5;
+			}
+		}
+	}
+}
