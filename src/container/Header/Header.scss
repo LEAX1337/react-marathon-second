@@ -1,0 +1,11 @@
+.app__header {
+	@apply bg-colorBlack;
+
+	&-h1 {
+		@apply font-fontBase text-colorGolden tracking-[.04em] leading-[117px] text-[90px] uppercase;
+	}
+
+	&-img img {
+		@apply w-4/5;
+	}
+}

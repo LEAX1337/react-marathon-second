@@ -1,0 +1,38 @@
+.app__aboutus {
+	@apply relative;
+
+	&-overlay {
+		@apply absolute inset-0;
+
+		& img {
+			@apply w-[391px] h-[415px] z-0;
+		}
+	}
+
+	&-content {
+		@apply z-[2] w-full;
+
+		&_about {
+			flex: 1;
+			@apply flex justify-end items-end flex-col text-right;
+		}
+
+		&_knife {
+			@apply mx-16 my-8;
+
+			& img {
+				@apply h-[910px] flex;
+			}
+		}
+
+		&_history {
+			flex: 1;
+			@apply flex justify-start items-start flex-col text-left;
+		}
+
+		&_history p,
+		&_about p {
+			@apply my-8 text-colorGrey;
+		}
+	}
+}
