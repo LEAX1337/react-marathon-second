@@ -5,12 +5,13 @@
 		@apply absolute inset-0;
 
 		& img {
-			@apply w-[391px] h-[415px] z-0;
+			@apply w-4/5 md:w-[391px] h-[320px] md:h-[415px] z-0;
 		}
 	}
 
 	&-content {
-		@apply z-[2] w-full;
+		z-index: 3;
+		@apply flex-col lg:flex-row;
 
 		&_about {
 			flex: 1;
@@ -18,10 +19,10 @@
 		}
 
 		&_knife {
-			@apply mx-16 my-8;
+			@apply mx-0 lg:mx-16 my-16 lg:my-8;
 
 			& img {
-				@apply h-[910px] flex;
+				@apply h-[910px] z-[2] flex;
 			}
 		}
 
@@ -32,7 +33,7 @@
 
 		&_history p,
 		&_about p {
-			@apply my-8 text-colorGrey;
+			@apply my-16 lg:my-8 text-colorGrey;
 		}
 	}
 }

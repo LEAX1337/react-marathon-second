@@ -1,0 +1,23 @@
+.app__menuItem {
+	@apply w-full my-4 flex flex-col;
+
+	&-head {
+		@apply flex justify-between items-center;
+	}
+
+	&-sub {
+		@apply mt-[.2rem] w-full;
+	}
+
+	&-name {
+		flex: 1;
+	}
+
+	&-dash {
+		@apply w-[90px] h-[1px] bg-colorGolden mx-4;
+	}
+
+    &-price{
+        @apply flex justify-end items-end;
+    }
+}

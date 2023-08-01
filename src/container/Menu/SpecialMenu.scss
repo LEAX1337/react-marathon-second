@@ -1,0 +1,33 @@
+.app__specialMenu {
+	@apply flex-col bg-colorBlack;
+
+	&-title {
+		@apply mb-8 text-center;
+	}
+
+	&-menu {
+		@apply w-full my-8 flex justify-center items-center lg:items-start flex-col lg:flex-row;
+
+		&_heading {
+			@apply font-fontBase font-semibold leading-[58.5px] text-4xl md:text-5xl tracking-[0.04rem] text-white;
+		}
+
+		&_wine,
+		&_cocktails {
+			flex: 1;
+			@apply w-full flex-col;
+		}
+
+		&_img {
+			@apply w-full md:w-[410px] lg:w-[650px] mx-8 my-12 lg:my-0;
+
+			& img {
+				@apply h-auto lg:h-[920px] w-full;
+			}
+		}
+
+		&-items {
+			@apply flex flex-col my-8 w-full;
+		}
+	}
+}

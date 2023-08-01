@@ -20,13 +20,11 @@ const AboutUs = () => (
 					Know More
 				</button>
 			</div>
-		</div>
 
-    <div className="app__aboutus-content_knife flex__center">
-      <img src={images.knife} alt="About Knife" />
-    </div>
+			<div className="app__aboutus-content_knife flex__center">
+				<img src={images.knife} alt="About Knife" />
+			</div>
 
-    <div className="app__aboutus-content flex__center">
 			<div className="app__aboutus-content_history">
 				<h1 className="headtext__cormorant">Our History</h1>
 				<img src={images.spoon} alt="about_spoon" className="spoon__img" />
@@ -38,7 +36,6 @@ const AboutUs = () => (
 				</button>
 			</div>
 		</div>
-
 	</div>
 )
 
