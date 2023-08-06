@@ -1,0 +1,16 @@
+.app__video {
+	@apply h-screen relative;
+
+	& video {
+		@apply w-full h-full object-cover;
+	}
+
+	&-overlay {
+		background: rgba(0, 0, 0, 0.65);
+		@apply absolute inset-0;
+
+		&_circle {
+			@apply w-[100px] h-[100px] rounded-full border border-solid border-colorGolden cursor-pointer;
+		}
+	}
+}

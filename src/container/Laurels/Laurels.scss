@@ -1,0 +1,16 @@
+.app__laurels_awards {
+	@apply flex flex-wrap flex-col justify-start items-center mt-12;
+
+	&-card {
+		flex: 1;
+		@apply flex justify-start items-start min-w-full my-4 md:min-w-[230px] m-4;
+
+		& img {
+			@apply w-[50px] h-[50px] object-cover;
+		}
+
+		&_content {
+			@apply flex flex-col ml-4;
+		}
+	}
+}

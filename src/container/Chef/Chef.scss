@@ -1,0 +1,23 @@
+.app__chef-content {
+	@apply flex flex-col w-full mt-20;
+
+	&_quote {
+		@apply flex justify-start items-end;
+
+		& img {
+			@apply w-[47px] h-[40px] mb-4 mr-4;
+		}
+	}
+}
+
+.app__chef-sign {
+	@apply w-full mt-12;
+
+	& p:first-child {
+		@apply font-fontBase font-normal text-[32px] leading-[41px] tracking-[.04rem] capitalize text-colorGolden;
+	}
+
+	& img {
+		@apply w-4/5 lg:w-[250px] xl:w-[370px] mt-12;
+	}
+}
