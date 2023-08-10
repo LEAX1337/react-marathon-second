@@ -1,0 +1,55 @@
+.app__gallery {
+	@apply flex flex-col lg:flex-row bg-colorBlack py-16 pl-8 md:pl-16 lg:pl-24;
+
+	&-content {
+		flex: 1;
+		@apply flex justify-center items-start flex-col min-w-full md:min-w-[500px] pr-8;
+
+        & button {
+            @apply mt-4;
+        }
+	}
+
+    &-images{
+        flex: 1;
+        @apply flex flex-row max-w-full my-20 lg:my-0 lg:max-w-[50%] relative;
+
+        &_container{
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            @apply flex flex-row max-w-max overflow-x-scroll;
+
+            &::-webkit-scrollbar{
+                display:none;
+            }
+        }
+
+        &_card{
+            @apply relative min-w-[240px] md:min-w-[301px] h-[320px] md:h-[447px] mr-8;
+
+            & img{
+                @apply w-full h-full object-cover opacity-100 duration-500 ease-in;
+            }
+
+            &:hover img{
+                @apply opacity-30;
+            }
+
+            &:hover .gallery__image-icon{
+                @apply opacity-100;
+            }
+        }
+
+        &_arrows{
+            @apply flex w-full justify-between items-center px-4 bottom-[5%] absolute;
+        }
+    }
+
+    .gallery__image-icon{
+        @apply absolute text-white opacity-50 text-[2rem] cursor-pointer duration-500 ease-in;
+    }
+
+    .gallery__arrow-icon{
+        @apply text-colorGolden text-[2rem] cursor-pointer bg-colorBlack rounded-md hover:text-white;
+    }
+}

@@ -1,0 +1,11 @@
+.app__footerOverlay{
+    @apply w-full h-full z-[1] flex flex-col absolute; 
+
+    &-black{
+        @apply h-1/4 bg-colorBlack;
+    }
+
+    &-img{
+        @apply h-3/4;
+    }
+}

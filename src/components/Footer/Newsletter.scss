@@ -1,0 +1,23 @@
+.app__newsletter{
+    @apply py-8 px-0 md:px-16 border-none md:border md:border-solid border-colorGolden bg-colorBlack z-[20];
+
+    &-heading{
+        @apply text-center;
+
+        & h1{
+            @apply text-[32px] md:text-[64px] leading-[50px] md:leading-[64px] text-center;
+        }
+    }
+
+    &-input{
+        @apply flex-col w-full lg:w-auto lg:flex-row mt-12;
+
+        & input{
+            @apply w-full lg:w-[620px] border border-solid border-colorGolden rounded-md text-[1rem] xl:text-[2rem] font-fontBase text-white mb-8 lg:mb-0 lg:mr-8 py-[.75rem] px-4 bg-colorBlack;
+        }
+
+        & button{
+            @apply max-w-max;
+        }
+    }
+}

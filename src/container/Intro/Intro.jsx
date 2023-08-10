@@ -17,7 +17,7 @@ const Intro = () => {
 
 	return (
 		<div className="app__video">
-			<video src={meal} type="video/mp4" ref={vidRef} Loop controls={false} muted />
+			<video src={meal} type="video/mp4" ref={vidRef} loop controls={false} muted />
 			<div className="app__video-overlay flex__center">
 				<div className="app__video-overlay_circle flex__center" onClick={handleVideo}>
 					{playVideo ? <BsPauseFill color="#fff" fontSize={30} /> : <BsFillPlayFill color="#fff" fontSize={30} />}
